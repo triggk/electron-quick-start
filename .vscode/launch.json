@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "Debug Main Process",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+
+      //launch using electron
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
+      
+      //run a named gulp task before the main program (build)
+      "preLaunchTask": "default",
+
+      //path of the application entry point
+      "program": "${workspaceRoot}/main.js"
+    }
+  ]
+}
